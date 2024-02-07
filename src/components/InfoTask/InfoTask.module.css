@@ -1,0 +1,250 @@
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 0rem;
+}
+
+.modal.app {
+  padding: 0rem;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2.4rem;
+  border-radius: 0.6rem;
+  width: 91.4666666667vw;
+  max-width: 48rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal_content {
+    padding: 3.2rem;
+  }
+}
+
+.container_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.container_header .title {
+  font-family: Plus Jakarta Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0rem;
+}
+
+.container_header .title.dark {
+  color: #FFF;
+}
+
+.container_header .button {
+  background-color: transparent;
+  border: none;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 0rem;
+}
+
+.modal_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+
+.modal_content.light {
+  background-color: #FFFFFF;
+}
+
+.modal_content.dark {
+  background-color: #2B2C37;
+}
+
+.description {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+  margin: 0rem;
+}
+
+.label {
+  font-family: Plus Jakarta Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0rem;
+}
+
+.label.subtasks {
+  margin-bottom: 0.8rem;
+}
+
+.label.light {
+  color: #828FA3;
+}
+
+.label.dark {
+  color: #FFF;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+
+.select {
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+  background-color: transparent;
+  padding: 0.9rem 1.6rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid rgba(130, 143, 163, 0.25);
+}
+
+.select.light {
+  color: #000;
+}
+
+.select.dark {
+  color: #FFF;
+}
+
+.status {
+  margin-top: 1.6rem;
+}
+
+.option {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+  border-radius: 0.8rem;
+}
+
+.option.light {
+  background-color: #FFFFFF;
+}
+
+.option.dark {
+  background-color: #2B2C37;
+}
+
+.dropMenu {
+  position: absolute;
+  width: 15rem;
+  height: 9.4rem;
+  top: 5rem;
+  right: -3rem;
+  padding: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 0.8rem;
+  z-index: 4;
+}
+
+.dropMenu.light {
+  background-color: #FFFFFF;
+}
+
+.dropMenu.dark {
+  background-color: #20212C;
+}
+
+.dropMenu .text {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+
+.dropMenu .text.delete {
+  color: #EA5555;
+}
+
+@media screen and (min-width: 768px) {
+  .container_header {
+    gap: 2.4rem;
+  }
+  .dropMenu {
+    right: -10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal {
+    cursor: auto;
+  }
+  .dropMenu {
+    width: 19.2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dropMenu .text:hover {
+    cursor: pointer;
+  }
+  .button:hover, .select:hover, .option:hover {
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=InfoTask.module.css.map */

@@ -1,0 +1,172 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  gap: 2.4rem;
+  padding: 2.4rem 1.6rem 5rem 2.4rem;
+  overflow-x: scroll;
+  height: 100%;
+}
+
+.main.light {
+  background-color: #F4F7FD;
+}
+
+.main.dark {
+  background-color: #20212C;
+}
+
+.text {
+  color: #828FA3;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0rem;
+  padding: 0rem 1.6rem;
+}
+
+.column {
+  min-width: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.column .text {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  width: 100%;
+  padding: 0rem 0rem 0.4rem 0rem;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.column .text::before {
+  display: block;
+  float: left;
+  content: '';
+  left: 0rem;
+  top: 0rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5rem;
+  margin-right: 1.2rem;
+}
+
+.column:nth-child(3n+1) .text::before {
+  background-color: #49C4E5;
+}
+
+.column:nth-child(3n+2) .text::before {
+  background-color: #8471F2;
+}
+
+.column:nth-child(3n+3) .text::before {
+  background-color: #67E2AE;
+}
+
+.createColumn {
+  margin-top: 3.9rem;
+  min-width: 28rem;
+  color: #828FA3;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  border-radius: 0.6rem;
+}
+
+.createColumn.light {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E9EFFA), to(rgba(233, 239, 250, 0.5)));
+  background: linear-gradient(180deg, #E9EFFA 0%, rgba(233, 239, 250, 0.5) 100%);
+}
+
+.createColumn.dark {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 44, 55, 0.25)), to(rgba(43, 44, 55, 0.13)));
+  background: linear-gradient(180deg, rgba(43, 44, 55, 0.25) 0%, rgba(43, 44, 55, 0.13) 100%);
+}
+
+.button {
+  color: #FFF;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 2.4rem;
+  background-color: #635FC7;
+  border: none;
+  width: 17.4rem;
+  height: 4.8rem;
+}
+
+.boardEmpty {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  margin-top: -7.2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.boardEmpty.light {
+  background-color: #F4F7FD;
+}
+
+.boardEmpty.dark {
+  background-color: #20212C;
+}
+
+@media screen and (min-width: 768px) {
+  .moveLeft {
+    margin-left: 26rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .moveLeft {
+    margin-left: 30rem;
+  }
+  .button:hover {
+    background-color: #A8A4FF;
+    cursor: pointer;
+  }
+  .createColumn:hover {
+    cursor: pointer;
+    color: #635FC7;
+  }
+}
+/*# sourceMappingURL=Main.module.css.map */

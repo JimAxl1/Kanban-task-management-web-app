@@ -1,0 +1,157 @@
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 0rem;
+}
+
+.modal.app {
+  padding: 0rem;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2.4rem;
+  border-radius: 0.6rem;
+  width: 91.4666666667vw;
+  max-width: 48rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal_content {
+    padding: 3.2rem;
+  }
+}
+
+.modal_content {
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+
+.modal_content.light {
+  background-color: #FFFFFF;
+}
+
+.modal_content.dark {
+  background-color: #2B2C37;
+}
+
+.title {
+  color: #EA5555;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0rem;
+}
+
+.text {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+  margin: 0rem;
+}
+
+.buttonDelete, .buttonClose {
+  height: 4rem;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.3rem;
+  border-radius: 2rem;
+  border: none;
+  width: 100%;
+}
+
+.buttonDelete {
+  background-color: #EA5555;
+  color: #FFF;
+}
+
+.buttonClose {
+  color: #635FC7;
+}
+
+.buttonClose.light {
+  background-color: rgba(99, 95, 199, 0.1);
+}
+
+.buttonClose.dark {
+  background-color: #FFF;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonDelete, .buttonClose {
+    width: 20rem;
+  }
+  .buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal {
+    cursor: auto;
+  }
+  .buttonDelete:hover {
+    cursor: pointer;
+    background-color: #FF9898;
+  }
+  .buttonClose:hover {
+    cursor: pointer;
+  }
+  .buttonClose:hover.light {
+    background-color: rgba(99, 95, 199, 0.25);
+  }
+}
+/*# sourceMappingURL=DeleteTask.module.css.map */

@@ -1,0 +1,85 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  gap: 1.3rem;
+}
+
+.container.light {
+  background-color: #F4F7FD;
+}
+
+.container.dark {
+  background-color: #20212C;
+}
+
+.container .text {
+  font-family: Plus Jakarta Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container .text.light {
+  color: #000112;
+  background-color: transparent;
+}
+
+.container .text.dark {
+  color: #FFF;
+  background-color: transparent;
+}
+
+.container .text.completed {
+  opacity: 0.5;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.checkBox {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid rgba(130, 143, 163, 0.25);
+}
+
+.checkBox.light {
+  background-color: #FFFFFF;
+}
+
+.checkBox.dark {
+  background-color: #2B2C37;
+}
+
+.checkBox:checked {
+  background-color: #635FC7;
+  background-image: url("../../../public/assets/icon-check.svg");
+  background-size: auto;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+  .container:hover {
+    cursor: pointer;
+    background-color: rgba(99, 95, 199, 0.25);
+  }
+  .container:hover .text {
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=Subtask.module.css.map */

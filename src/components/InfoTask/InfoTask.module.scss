@@ -1,0 +1,170 @@
+@import '../../styles/modal.scss';
+
+.container_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    gap: 1.6rem;
+    .title{
+        font-family: Plus Jakarta Sans;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0rem;
+        &.dark{
+            color: #FFF;
+        }
+    }  
+    .button{
+        background-color: transparent;
+        border: none;
+        height: min-content;
+        padding: 0rem;
+    }
+}
+
+.modal_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    &.light{
+        background-color: #FFFFFF;
+    }
+    &.dark{
+        background-color: #2B2C37;
+    }
+}
+
+.description{
+    color: #828FA3;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.3rem; 
+    margin: 0rem;
+}
+
+.label{
+    font-family: Plus Jakarta Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0rem;
+    &.subtasks{
+        margin-bottom: 0.8rem;
+    }
+    &.light{
+        color: #828FA3;
+    }
+    &.dark{
+        color: #FFF;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.select{
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.3rem;
+    background-color: transparent;
+    padding: 0.9rem 1.6rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid rgba(130, 143, 163, 0.25);;
+    &.light{
+        color: #000;
+    }
+    &.dark{
+        color: #FFF;
+    }
+}
+
+.status{
+    margin-top: 1.6rem;
+}
+
+.option{
+    color: #828FA3;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.3rem;
+    border-radius: 0.8rem;
+    &.light{
+        background-color: #FFFFFF;
+    }
+    &.dark{
+        background-color: #2B2C37;
+    }
+}
+
+.dropMenu{
+    position: absolute;
+    width: 15rem;
+    height: 9.4rem;
+    top: 5rem;
+    right: -3rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.8rem;
+    z-index: 4;
+    &.light{
+        background-color: #FFFFFF;
+    }
+    &.dark{
+        background-color: #20212C;
+    }
+    .text{
+        color: #828FA3;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.3rem;
+        &.delete{
+            color: #EA5555;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container_header{
+        gap: 2.4rem;
+    }
+
+    .dropMenu{
+        right: -10rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .modal{
+        cursor: auto;
+    }
+
+    .dropMenu{
+        width: 19.2rem;
+        justify-content: space-between;
+        .text:hover{
+            cursor: pointer;
+        }
+    }
+
+    .button:hover, .select:hover, .option:hover{
+        cursor: pointer;
+    }
+}

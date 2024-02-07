@@ -1,0 +1,211 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 6.4rem;
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.container.light {
+  background-color: #FFFFFF;
+}
+
+.container.dark {
+  background-color: #2B2C37;
+}
+
+.container_Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 70%;
+}
+
+.title {
+  margin: 0rem 0rem 0rem 1.6rem;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+}
+
+.title.light {
+  color: #000112;
+}
+
+.title.dark {
+  color: #FFF;
+}
+
+.containerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  gap: 1.6rem;
+}
+
+.button1 {
+  width: 4.8rem;
+  height: 3.2rem;
+  background-color: #635FC7;
+  color: #FFF;
+  border: none;
+  border-radius: 4rem;
+}
+
+.button1:disabled {
+  opacity: 0.25;
+}
+
+.button2 {
+  background-color: transparent;
+  border: none;
+  padding: 0rem;
+  margin-right: 0.7rem;
+}
+
+.dropMenu {
+  position: absolute;
+  top: 5.7rem;
+  right: 2rem;
+  padding: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.8rem;
+}
+
+.dropMenu.light {
+  background-color: #FFFFFF;
+}
+
+.dropMenu.dark {
+  background-color: #20212C;
+}
+
+.dropMenu .text {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+
+.dropMenu .text.delete {
+  color: #EA5555;
+}
+
+.chevron {
+  width: 1rem;
+  height: 0.7rem;
+  margin-left: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-widtH: 768px) {
+  .container {
+    min-height: 8rem;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 0rem 2.4rem;
+  }
+  .container_Title {
+    height: 100%;
+  }
+  .moveRight {
+    padding-left: 8.2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .button1 {
+    width: 16.4rem;
+    height: 4.8rem;
+  }
+  .button1::after {
+    content: ' Add New Task';
+    font-size: 1.5rem;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .logo {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 2.4rem;
+  }
+  .logo.light {
+    border-right: 0.1rem solid #E4EBFA;
+  }
+  .logo.dark {
+    border-right: 0.1rem solid #3E3F4E;
+  }
+  .chevron {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .moveRight {
+    padding-left: 12.2rem;
+  }
+  .button1:hover {
+    cursor: pointer;
+    background-color: #A8A4FF;
+  }
+  .button1:disabled:hover {
+    cursor: not-allowed;
+  }
+  .button2:hover {
+    cursor: pointer;
+  }
+  .dropMenu {
+    width: 19.2rem;
+    height: 9.4rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.6rem;
+  }
+  .dropMenu .text:hover {
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=Header.module.css.map */

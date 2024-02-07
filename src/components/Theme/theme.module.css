@@ -1,0 +1,124 @@
+.container {
+  margin: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.367rem;
+  padding: 1.4rem;
+  border-radius: 0.6rem;
+}
+
+.container.light {
+  background-color: #F4F7FD;
+}
+
+.container.dark {
+  background-color: #20212C;
+}
+
+.img {
+  width: 1.833rem;
+  height: 1.833rem;
+}
+
+.toggle_switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0rem solid #bbb;
+  border-radius: 2rem;
+  height: 2rem;
+}
+
+.inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.inner:before, .inner:after {
+  float: left;
+  width: 50%;
+  height: 3.6rem;
+  padding: 0rem;
+  line-height: 3.6rem;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.inner:before {
+  content: "";
+  padding-left: 1rem;
+  background-color: #635FC7;
+  color: #fff;
+}
+
+.inner:after {
+  content: "";
+  padding-right: 1rem;
+  background-color: #635FC7;
+  color: #fff;
+  text-align: right;
+}
+
+.switch {
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0.3rem;
+  background: #fff;
+  position: absolute;
+  top: 0rem;
+  bottom: 0rem;
+  border: 0rem solid #bbb;
+  border-radius: 2rem;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+.checkbox:checked + .label .inner {
+  margin-left: 0rem;
+}
+
+.checkbox:checked + .label .switch {
+  right: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .label:hover {
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=theme.module.css.map */

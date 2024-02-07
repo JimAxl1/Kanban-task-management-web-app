@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 0rem;
+}
+
+.modal.app {
+  padding: 0rem;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2.4rem;
+  border-radius: 0.6rem;
+  width: 91.4666666667vw;
+  max-width: 48rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal_content {
+    padding: 3.2rem;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

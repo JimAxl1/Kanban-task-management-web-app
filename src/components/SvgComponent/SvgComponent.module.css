@@ -1,0 +1,21 @@
+.container {
+  width: auto;
+  height: auto;
+}
+
+.gray {
+  fill: #828FA3;
+}
+
+.red {
+  fill: #EA5555;
+}
+
+.purple {
+  fill: #635FC7;
+}
+
+.white {
+  fill: #FFFFFF;
+}
+/*# sourceMappingURL=SvgComponent.module.css.map */

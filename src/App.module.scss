@@ -1,0 +1,30 @@
+.showSidebar{
+    width: 1.6rem;
+    height: 1.022rem;
+}
+
+.iconContainer{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .iconContainer{
+        position: fixed;
+        bottom: 3.2rem;
+        left: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #635FC7;
+        width: 5.6rem;
+        height: 4.8rem;
+        border-radius: 0rem 2.4rem 2.4rem 0rem;
+    }
+}   
+
+@media screen and (min-width: 992px){
+    .iconContainer:hover{
+        background-color: #A8A4FF;
+        cursor: pointer;
+    }
+}

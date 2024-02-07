@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    gap: 1.3rem;
+    &.light{
+        background-color: #F4F7FD;
+    }
+    &.dark{
+        background-color: #20212C;
+    }
+    .text{
+        font-family: Plus Jakarta Sans;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &.light{
+            color: #000112;
+            background-color: transparent;
+        }
+        &.dark{
+            color: #FFF;
+            background-color: transparent;
+        }
+        &.completed{
+            opacity: 0.5;
+            text-decoration-line:line-through;
+        }
+    }
+}
+
+.checkBox{
+    cursor: pointer;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid rgba(130, 143, 163, 0.25);
+    &.light{
+        background-color: #FFFFFF;
+    }
+    &.dark{
+        background-color: #2B2C37;
+    }
+    
+}
+
+.checkBox:checked{
+    background-color: #635FC7;
+    background-image: url('../../../public/assets/icon-check.svg');
+    background-size: auto;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px){
+    .container:hover{
+        cursor: pointer;
+        background-color: rgba(99, 95, 199, 0.25);
+        .text{
+            cursor: pointer;
+        }
+    }
+}

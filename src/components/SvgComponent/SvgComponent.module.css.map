@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,KAAK,CAAA;EACH,IAAI,EAAE,OAAO;CACd;;AAED,AAAA,IAAI,CAAA;EACF,IAAI,EAAE,OAAO;CACd;;AAED,AAAA,OAAO,CAAA;EACL,IAAI,EAAE,OAAO;CACd;;AAED,AAAA,MAAM,CAAA;EACJ,IAAI,EAAE,OAAO;CACd",
+    "sources": [
+        "SvgComponent.module.scss"
+    ],
+    "names": [],
+    "file": "SvgComponent.module.css"
+}

@@ -1,0 +1,99 @@
+@import '../../styles/modal.scss';
+
+.modal_content{
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    &.light{
+        background-color: #FFFFFF;
+    }
+    &.dark{
+        background-color: #2B2C37;
+    }
+}
+
+.title{
+    color: #EA5555;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0rem;
+}
+
+.text{
+    color: #828FA3;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.3rem;
+    margin: 0rem;
+}
+
+.buttonDelete, .buttonClose{
+    height: 4rem;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.3rem;
+    border-radius: 2rem;
+    border: none;
+    width: 100%;
+}
+
+.buttonDelete{
+    background-color: #EA5555;
+    color: #FFF;
+}
+
+.buttonClose{
+    color: #635FC7;
+    &.light{
+        background-color: rgba(99, 95, 199, 0.10);
+    }
+    &.dark{
+        background-color: #FFF;
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px){
+    .buttonDelete, .buttonClose{
+        width: 20rem;
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .modal{
+        cursor: auto;
+    }
+
+    .buttonDelete:hover{
+        cursor: pointer;
+        background-color: #FF9898;
+    }
+
+    .buttonClose:hover{
+        cursor: pointer;
+        &.light{
+            background-color: rgba(99, 95, 199, 0.25);
+        }
+    }
+}

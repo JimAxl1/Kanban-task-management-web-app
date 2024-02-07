@@ -1,0 +1,158 @@
+@import '../../styles/modal.scss';
+
+.modal_content{
+    padding: 2.4rem;
+    &.light{
+        background-color: #FFFFFF;
+    }
+    &.dark{
+        background-color: #2B2C37;
+    }
+}
+
+.title{
+    font-family: Plus Jakarta Sans;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0rem 0rem 2.4rem 0rem;
+    &.light{
+        color: #000112;
+    }
+    &.dark{
+        color: #FFF;
+    }
+}
+
+.label{
+    font-family: Plus Jakarta Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: relative;
+    &.light{
+        color: #828FA3;
+    }
+    &.dark{
+        color: #FFF;
+    }
+}
+
+.input{
+    background-color: transparent;
+    border: 0.1rem solid rgba(130, 143, 163, 0.25);
+    border-radius: 0.4rem;
+    padding: 0.75rem 1.5rem;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.3rem;
+    width: 100%;
+    &.light{
+        color: #000112;
+    }
+    &.dark{
+        color: #FFF;
+    }
+    &.errorInput{
+        border: 0.1rem solid #EA5555;
+    }
+}
+
+.containerColumns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.6rem;
+    margin-bottom: 0.4rem;
+    position: relative;
+    .error{
+        top: 20%;
+        right: 4.5rem;
+    }
+}
+
+.delete{
+    background-color: transparent;
+    border: none;
+    padding: 0rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    align-self: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.buttonAdd, .buttonCreate{
+    border-radius: 2rem;
+    height: 4rem;
+    width: 100%;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.3rem;
+    border: none;
+}
+
+.buttonAdd{
+    color: #635FC7;
+    &.light{
+        background-color: rgba(99, 95, 199, 0.10);
+    }
+    &.dark{
+        background-color: #FFF;
+    }
+}
+
+.buttonCreate{
+    background-color: #635FC7;
+    color: #FFF;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.error{
+    color: #EA5555;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.3rem;
+    position: absolute;
+    margin: 0rem;
+    top: 50%;
+    right: 1rem;
+}
+
+@media screen and (min-width: 992px){
+    .input:hover{
+        cursor: pointer;
+        border: 0.1rem solid #635FC7;
+    }
+
+    .buttonAdd:hover{
+        cursor: pointer;
+        &.light{
+            background-color: rgba(99, 95, 199, 0.25);
+        }
+    }
+
+    .buttonCreate:hover{
+        cursor: pointer;
+        background-color: #A8A4FF;
+    }
+}

@@ -1,0 +1,244 @@
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 0rem;
+}
+
+.modal.app {
+  padding: 0rem;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2.4rem;
+  border-radius: 0.6rem;
+  width: 91.4666666667vw;
+  max-width: 48rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal_content {
+    padding: 3.2rem;
+  }
+}
+
+.modal_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70.4%;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0rem 1rem 2rem 0rem rgba(54, 78, 126, 0.25);
+          box-shadow: 0rem 1rem 2rem 0rem rgba(54, 78, 126, 0.25);
+  padding: 0rem;
+}
+
+.modal_content.light {
+  background-color: #FFFFFF;
+}
+
+.modal_content.dark {
+  background-color: #2B2C37;
+}
+
+.logo {
+  display: none;
+}
+
+.title {
+  color: #828FA3;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.24rem;
+  margin: 1.6rem 2.4rem 1.9rem 2.4rem;
+}
+
+.listContainer {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.boards {
+  padding: 1.4rem 0rem 1.4rem 2.4rem;
+}
+
+.boards .button {
+  background-color: transparent;
+  border: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.boards.selected {
+  margin-right: 2.4rem;
+  border-radius: 0rem 10rem 10rem 0rem;
+  background-color: #635FC7;
+}
+
+.boards.selected .button {
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  color: #828FA3;
+}
+
+.createButton {
+  color: #635FC7;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  border: none;
+  padding: 1.4rem 0rem 1.4rem 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: none;
+  }
+  .app {
+    opacity: 1;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    width: 26rem;
+    display: block;
+  }
+  .app .modal_content {
+    margin: 0rem;
+    height: auto;
+    min-height: 100vh;
+    width: 26rem;
+    border-radius: 0rem;
+  }
+  .app .modal_content.light {
+    border-right: 0.1rem solid #E4EBFA;
+  }
+  .app .modal_content.dark {
+    border-right: 0.1rem solid #3E3F4E;
+  }
+  .modal {
+    z-index: 2;
+  }
+  .logo {
+    display: block;
+    width: 15.2528rem;
+    height: 2.5224rem;
+    margin: 3.2rem 0rem 3.8rem 2.6rem;
+  }
+  .hide {
+    margin-top: 0rem;
+    margin-bottom: 3.2rem;
+    margin-right: 2.3rem;
+    background-color: transparent;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    color: #828FA3;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 1.4rem 3.5rem;
+    border-radius: 0rem 10rem 10rem 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app {
+    width: 30rem;
+  }
+  .app .modal_content {
+    width: 30rem;
+  }
+  .hide:hover {
+    cursor: pointer;
+    color: #635FC7;
+  }
+  .hide:hover.light {
+    background-color: rgba(99, 95, 199, 0.1);
+  }
+  .hide:hover.dark {
+    background-color: #FFF;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .boards:hover {
+    margin-right: 2.4rem;
+    border-radius: 0rem 10rem 10rem 0rem;
+    cursor: pointer;
+  }
+  .boards:hover .button, .boards:hover .createButton {
+    color: #635FC7;
+  }
+  .boards:hover.light {
+    background-color: rgba(99, 95, 199, 0.1);
+  }
+  .boards:hover.dark {
+    color: #635FC7;
+    background-color: #FFF;
+  }
+}
+/*# sourceMappingURL=Aside.module.css.map */
