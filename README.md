@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JimAxl1/Kanban-task-management-web-app)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Link](https://kanban-task-web-app.web.app/)
 
 ## My process
 
